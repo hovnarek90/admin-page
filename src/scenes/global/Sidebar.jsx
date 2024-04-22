@@ -44,6 +44,9 @@ const SidebarComponent = () => {
   return (
     <Box
       sx={{
+        "& .ps-sidebar-root": {
+          border: "none !important",
+        },
         ".ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
         },
@@ -68,7 +71,7 @@ const SidebarComponent = () => {
       <Sidebar
         collapsed={isCollapsed}
         // backgroundColor={colors.primary[400]}
-        style={{ height: "100vh" }}
+        // style={{ height: "100vh" }}
       >
         <Menu iconShape="square">
           {/* LOGO AND MENU ICON */}
